@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/grid-app/static/css/main.82ce1aa0.css",
-    "main.js": "/grid-app/static/js/main.fcc6053e.js",
-    "static/media/image7.png": "/grid-app/static/media/image7.24cdcbbcbdef9a56f293.png",
-    "static/media/image3.png": "/grid-app/static/media/image3.a08c49629f6d26c94412.png",
-    "index.html": "/grid-app/index.html",
-    "main.82ce1aa0.css.map": "/grid-app/static/css/main.82ce1aa0.css.map",
-    "main.fcc6053e.js.map": "/grid-app/static/js/main.fcc6053e.js.map"
+    "main.css": "/public/static/css/main.c0d57b47.css",
+    "main.js": "/public/static/js/main.903b8d2b.js",
+    "static/media/image7.png": "/public/static/media/image7.24cdcbbcbdef9a56f293.png",
+    "static/media/image3.png": "/public/static/media/image3.a08c49629f6d26c94412.png",
+    "index.html": "/public/index.html",
+    "main.c0d57b47.css.map": "/public/static/css/main.c0d57b47.css.map",
+    "main.903b8d2b.js.map": "/public/static/js/main.903b8d2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.82ce1aa0.css",
-    "static/js/main.fcc6053e.js"
+    "static/css/main.c0d57b47.css",
+    "static/js/main.903b8d2b.js"
   ]
 }
