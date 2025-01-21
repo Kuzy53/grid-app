@@ -34,7 +34,7 @@ import be from "./assets/be.svg";
 import fb from "./assets/fb.svg";
 import inst from "./assets/inst.svg";
 import ln from "./assets/in.svg";
-import maks from "./assets/maks.png";
+import maks from "./assets/maksim.jpg";
 import maps from "./assets/maps.svg";
 
 import image_0 from "./assets/project/Image.png";
@@ -74,7 +74,6 @@ const projectData = [
 		imageSrc: image_1,
 		showIcon: true,
 		iconSrc: app,
-		href: "#",
 	},
 	{
 		title: "Your Warehouse",
@@ -180,18 +179,33 @@ const projectData = [
 
 const ProjectCard = ({ title, description, backgroundColor, imageSrc, showIcon, iconSrc, href }) => {
 	return (
-		<Link to={`${href}`} target="_blank" title={title} aria-label={title}>
-			<div className={`project_item ${backgroundColor}`}>
-				<div className="project_item_title">
-					<div className="project_item_heder">
-						<h1>{title}</h1>
-						<p>{description}</p>
+		<>
+			{href ? (
+				<Link to={`${href}`} target="_blank" title={title} aria-label={title}>
+					<div className={`project_item ${backgroundColor}`}>
+						<div className="project_item_title">
+							<div className="project_item_heder">
+								<h1>{title}</h1>
+								<p>{description}</p>
+							</div>
+							{showIcon && iconSrc && <img src={iconSrc} alt="app icon" />}
+						</div>
+						<img className="project_img" src={imageSrc} alt="project" />
 					</div>
-					{showIcon && iconSrc && <img src={iconSrc} alt="app icon" />}
+				</Link>
+			) : (
+				<div className={`project_item ${backgroundColor}`}>
+					<div className="project_item_title">
+						<div className="project_item_heder">
+							<h1>{title}</h1>
+							<p>{description}</p>
+						</div>
+						{showIcon && iconSrc && <img src={iconSrc} alt="app icon" />}
+					</div>
+					<img className="project_img" src={imageSrc} alt="project" />
 				</div>
-				<img className="project_img" src={imageSrc} alt="project" />
-			</div>
-		</Link>
+			)}
+		</>
 	);
 };
 
