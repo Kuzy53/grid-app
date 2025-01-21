@@ -157,6 +157,7 @@ const projectData = [
 		imageSrc: image_11,
 		showIcon: true,
 		iconSrc: app,
+		href: "https://apps.apple.com/us/app/batteryhub-charge-to-go/id6739724509",
 	},
 	{
 		title: "CryptoWallet",
