@@ -1,16 +1,4 @@
-$text_icons-Primary: #ffffff;
-$text_icons-Secondary: #111111;
-
-$bg-primary: #030303;
-$bg-secondary: #282828;
-$bg-secondary-subtle: #121212;
-
-$brand-primary-strong: #92d700;
-$brand-primary-subtle: #ff6db2;
-$brand-primary-badge: #703fff;
-$brand-secondary-strong: #ff7a00;
-$brand-secondary-subtle: #a586ff;
-
+@import "variables";
 body {
 	background-color: #000000;
 	font-family: "Inter", serif;
@@ -419,7 +407,7 @@ button:hover {
 .consult_container {
 	border-radius: 32px;
 	background-color: #703fff;
-	background-image: url(./assets/image3.png);
+	background-image: url(../assets/image3.png);
 	background-repeat: no-repeat;
 	background-position: right 54px top 90px;
 	margin-top: 40px;
@@ -641,7 +629,7 @@ button:hover {
 	background-color: #703fff;
 	border-radius: 32px;
 
-	background-image: url(./assets/image7.png);
+	background-image: url(../assets/image7.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: right bottom;

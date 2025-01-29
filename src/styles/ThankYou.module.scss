@@ -1,0 +1,71 @@
+@import "variables";
+
+.section {
+	padding-top: 12px;
+	@media (min-width: 640px) {
+		padding-top: 24px;
+	}
+	height: 90vh;
+}
+
+.background {
+	background: #121212;
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.textCenter {
+	text-align: center;
+	color: white;
+}
+
+.title {
+	font-size: 2.25rem;
+	font-weight: 800;
+	margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+	.title {
+		font-size: 3.75rem;
+	}
+}
+
+.subtitle {
+	font-size: 1rem;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+	.subtitle {
+		font-size: 1.25rem;
+	}
+}
+
+.back {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 166px;
+	height: 57px;
+	border-radius: 255px;
+	background: $brand-primary-subtle;
+
+	border: none;
+	outline: none;
+	color: $text_icons-Primary;
+	text-decoration: none;
+	margin: auto;
+	padding: 0 20px;
+
+	&:hover {
+		background: $brand-primary-badge;
+	}
+	&:active {
+		background: $brand-secondary-strong;
+	}
+}
